@@ -1,10 +1,8 @@
 <script setup>
-import Home from './pages/home/index.vue';
-import NavigationBar from './components/NavigationBar.vue';
+import Home from './pages/index.vue';
 </script>
 
 <template>
-  <NavigationBar />
   <Home />
 </template>
 
