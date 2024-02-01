@@ -15,7 +15,7 @@
     <!-- Grid -->
     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 px-16 lg:items-center">
       <!-- Card -->
-      <div class="flex flex-col bg-brand-900/50 text-center rounded-xl p-8">
+      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
         <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 1</h4>
         <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
           <span class="font-bold text-4xl -me-2">Rp</span>
@@ -91,7 +91,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex flex-col bg-brand-900/50 text-center rounded-xl p-8">
+      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
         <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 2</h4>
         <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
           <span class="font-bold text-4xl -me-2">Rp</span>
@@ -167,7 +167,7 @@
           </li>
         </ul>
       </div>
-      <div class="flex flex-col bg-brand-900/50 text-center rounded-xl p-8">
+      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
         <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 3</h4>
         <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
           <span class="font-bold text-4xl -me-2">Rp</span>

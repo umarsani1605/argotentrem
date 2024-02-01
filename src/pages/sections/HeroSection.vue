@@ -18,8 +18,13 @@ import ScrollAnimation from '../../assets/animation/scroll.json'
         <p class="text-lg text-brand-50">
           Terletak di kaki Gunung Lawu, Argotentrem adalah tempat yang sempurna bagi para
           pencinta alam, keluarga, dan grup untuk mengeksplorasi keindahan alam sambil merasakan kedamaian.</p>
-        <a class="inline-flex bg-accent text-brand-950 text-sm font-bold rounded-full py-3 px-6" href="#">
+        <a class="inline-flex bg-accent text-brand-950 text-sm font-bold rounded-xl py-3 px-5" href="#">
           Booking Sekarang
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-5 ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+
         </a>
       </div>
       <div class="h-20 mt-24">
