@@ -5,6 +5,11 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,vue,jsx,tsx,mdx}",
+    "./node_modules/preline/preline.js",
+  ],
+  plugins: [
+    require('@tailwindcss/forms'), 
+    require('preline/plugin')
   ],
   theme: {
     extend: {
@@ -34,5 +39,4 @@ export default {
       },
     },
   },
-  plugins: [],
 }

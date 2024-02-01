@@ -54,7 +54,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="h-[500px] pb-20">
+  <div id="fifth" class="py-10">
     <div class="h-full max-w-[72rem] mx-auto px-4 flex flex-col py-4">
       <div class="flex justify-center mb-5">
         <div
@@ -68,7 +68,7 @@ onMounted(() => {
             <ul class="glide__slides h-full">
               <li class="glide__slide" v-for="review in reviews" :key="review">
                 <div
-                  class="relative flex flex-col text-center bg-brand-900/50 px-20 space-y-5 h-full items-center justify-center rounded-3xl duration-300 ease-in-out">
+                  class="relative flex flex-col text-center bg-brand-900/50 px-16 py-10 space-y-5 h-full items-center justify-center rounded-3xl duration-300 ease-in-out">
                   <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27" fill="none">
                     <path
                       d="M30.2921 15.6588V26.7529H19.2549V18.4466C19.2549 14.8434 19.5962 11.6384 20.2789 8.8317C20.9616 5.98707 22.0995 3.29414 23.6925 0.75293H30.6334C28.8508 3.33207 27.5043 5.87328 26.594 8.37656C25.7217 10.8419 25.2855 13.2693 25.2855 15.6588H30.2921ZM11.4606 15.6588V26.7529H0.366455V18.4466C0.366455 14.7675 0.707816 11.5436 1.39053 8.77481C2.11117 5.9681 3.28694 3.29414 4.91787 0.75293H11.8019C10.0193 3.33207 8.67279 5.87328 7.76251 8.37656C6.85222 10.8798 6.39708 13.3073 6.39708 15.6588H11.4606Z"

@@ -1,8 +1,8 @@
 <template>
-  <header class="flex flex-wrap fixed sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4">
+  <header class="fixed sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4">
     <nav class="max-w-[72rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
       <div class="flex items-center justify-between">
-        <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white" href="#">
+        <a href="#" class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white">
           <img class="w-10 h-auto" src="/logo-color.png" alt="Logo">
           Argotentrem
         </a>
@@ -29,17 +29,46 @@
       </div>
       <div id="navbar-image-and-text-2"
         class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-        <div class="text-white flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a class="font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#"
-            aria-current="page">Beranda</a>
-          <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="#">Tentang</a>
-          <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="#">Galeri</a>
-          <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="#">Harga Paket</a>
-          <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="#">Kontak</a>
+        <div class="
+              flex flex-col
+              gap-5
+              mt-5
+              sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5
+            ">
+          <a class="
+                text-sm text-gray-700
+                leading-6
+                hover:text-white
+                focus:outline-none focus:text-blue-600
+                dark:text-white dark:hover:text-gray-500 dark:focus:text-blue-500
+                active
+              " href="#first">
+            Beranda
+          </a>
+          <a class="
+                text-sm text-gray-700
+                leading-6
+                hover:text-white
+                focus:outline-none focus:text-blue-600
+                dark:text-white dark:hover:text-gray-500 dark:focus:text-blue-500
+              " href="#second">
+            Fasilitas
+          </a>
+          <a href="#third" class="text-sm text-gray-700
+                leading-6
+                hover:text-white
+                focus:outline-none focus:text-blue-600
+                dark:text-white dark:hover:text-gray-500 dark:focus:text-blue-500">Galeri</a>
+          <a href="#fourth" class="text-sm text-gray-700
+                leading-6
+                hover:text-white
+                focus:outline-none focus:text-blue-600
+                dark:text-white dark:hover:text-gray-500 dark:focus:text-blue-500">Lokasi</a>
+          <a href="#fifth" class="text-sm text-gray-700
+                leading-6
+                hover:text-white
+                focus:outline-none focus:text-blue-600
+                dark:text-white dark:hover:text-gray-500 dark:focus:text-blue-500">Review</a>
         </div>
       </div>
     </nav>

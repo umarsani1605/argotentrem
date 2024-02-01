@@ -7,16 +7,20 @@ import LocationSectionsVue from './sections/LocationSections.vue';
 import ReviewSectionVue from './sections/ReviewSection.vue';
 import CTABannerSectionVue from './sections/CTABannerSection.vue';
 import FooterVue from '@/components/Footer.vue';
-
+import FirstSection from './sections/FirstSection.vue';
+import PricingSection from '@/pages/sections/PricingSection.vue';
 </script>
 
 <template>
-  <NavigationBar />
-  <HeroSection />
-  <FacillitySectionVue />
-  <GallerySection />
-  <LocationSectionsVue />
-  <ReviewSectionVue />
-  <CTABannerSectionVue />
-  <FooterVue />
+  <div>
+    <HeroSection />
+    <FirstSection />
+    <FacillitySectionVue />
+    <GallerySection />
+    <LocationSectionsVue />
+    <PricingSection />
+    <ReviewSectionVue />
+    <CTABannerSectionVue />
+    <FooterVue />
+  </div>
 </template>

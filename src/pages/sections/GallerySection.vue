@@ -15,7 +15,7 @@ const images = [
 ]
 </script>
 <template>
-  <div class="h-[800px]">
+  <div id="third" class="py-20">
     <div class="h-full max-w-[72rem] mx-auto px-4 flex flex-col py-4">
       <div class="flex justify-center mb-5">
         <div
