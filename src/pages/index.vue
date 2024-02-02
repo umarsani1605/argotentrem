@@ -12,7 +12,7 @@ import PricingSection from '@/pages/sections/PricingSection.vue';
 </script>
 
 <template>
-  <div>
+  <div class="overflow-hidden">
     <HeroSection />
     <FirstSection />
     <FacillitySectionVue />

@@ -21,6 +21,12 @@ export default {
         'hero': "url('src/assets/images/hero-bg.jpg')",
         'cta': "url('src/assets/images/cta-bg.png')"
       },
+      aspectRatio: {
+        '2/3': '2 / 3',
+        '3/4': '3 / 4',
+        '3/2': '3 / 2',
+        '4/3': '4 / 3',
+      },
       colors: {
         'brand': {
           '50': '#fafee7',

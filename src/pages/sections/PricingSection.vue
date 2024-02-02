@@ -1,251 +1,86 @@
+<script setup>
+const pricing = [
+  {
+    id: 0,
+    name: 'Paket 1',
+    price: '35.000',
+    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    benefit: [
+      'Ut enim ',
+      'Ad minim',
+      'Quis nostrud',
+      'Ullamco',
+      'Laboris',
+      'Aliquip',
+      'Commodo',
+      'Consequat'
+    ]
+  },
+  {
+    id: 1,
+    name: 'Paket 2',
+    price: '75.000',
+    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    benefit: [
+      'Ut enim ',
+      'Ad minim',
+      'Quis nostrud',
+      'Ullamco',
+      'Laboris',
+      'Aliquip',
+      'Commodo',
+      'Consequat'
+    ]
+  },
+  {
+    id: 2,
+    name: 'Paket 3',
+    price: '150.000',
+    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    benefit: [
+      'Ut enim ',
+      'Ad minim',
+      'Quis nostrud',
+      'Ullamco',
+      'Laboris',
+      'Aliquip',
+      'Commodo',
+      'Consequat'
+    ]
+  },
+]
+</script>
 <template>
-  <!-- Pricing -->
-  <div class="max-w-[72rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Title -->
-    <div class="flex flex-col items-center mb-5">
+  <div id="pricing" class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem] py-10">
+    <div class="mb-5 flex justify-center">
       <div
-        class="w-96 py-3 font-serif text-4xl flex items-center text-brand-50 before:flex-[1_1_0%] before:border-t before:border-gray-200 before:border-[1px] before:me-4 after:flex-[1_1_0%] after:border-t after:border-gray-200 after:border-[1px] after:ms-4">
+        class="flex w-96 items-center py-3 font-serif text-4xl text-brand-50 before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
         Harga Paket
       </div>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">Whatever your status, our offers evolve according to your needs.
-      </p>
     </div>
-    <!-- End Title -->
+    <div class="mt-6 lg:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center">
+      <div class="flex flex-col gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-8"
+        v-for="item in pricing" :key="item.id">
+        <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">{{ item.name }}</h4>
+        <div class="mt-2 font-bold text-5xl text-gray-800 dark:text-gray-200">
+          <span class="font-medium text-4xl -me-2">Rp</span>
+          {{ item.price }}
+        </div>
+        <p class="text-sm ">{{ item.description }}</p>
 
-    <!-- Grid -->
-    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 px-16 lg:items-center">
-      <!-- Card -->
-      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
-        <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 1</h4>
-        <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
-          <span class="font-bold text-4xl -me-2">Rp</span>
-          35.000
-        </span>
-        <p class="mt-2 text-sm ">Advanced features for scaling your business</p>
-
-        <ul class="mt-7 ml-4 space-y-2.5 text-sm">
-          <li class="flex space-x-2">
+        <ul class="mt-4 ml-4 space-y-2.5 text-sm">
+          <li class="flex space-x-2" v-for="benefit in item.benefit" :key="benefit">
             <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <polyline points="20 6 9 17 4 12" />
             </svg>
             <span class="text-white">
-              Keuntungan 1
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 2
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 3
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 4
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 5
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 6
+              {{ benefit }}
             </span>
           </li>
         </ul>
       </div>
-      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
-        <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 2</h4>
-        <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
-          <span class="font-bold text-4xl -me-2">Rp</span>
-          35.000
-        </span>
-        <p class="mt-2 text-sm ">Advanced features for scaling your business</p>
-
-        <ul class="mt-7 ml-4 space-y-2.5 text-sm">
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 1
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 2
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 3
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 4
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 5
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 6
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="flex flex-col border-brand-900 border-4 bg-brand-900/50 text-center rounded-xl p-8">
-        <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">Paket 3</h4>
-        <span class="mt-5 font-bold text-5xl text-gray-800 dark:text-gray-200">
-          <span class="font-bold text-4xl -me-2">Rp</span>
-          35.000
-        </span>
-        <p class="mt-2 text-sm ">Advanced features for scaling your business</p>
-
-        <ul class="mt-7 ml-4 space-y-2.5 text-sm">
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 1
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 2
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 3
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 4
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 5
-            </span>
-          </li>
-
-          <li class="flex space-x-2">
-            <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
-            <span class="text-white">
-              Keuntungan 6
-            </span>
-          </li>
-        </ul>
-      </div>
-      <!-- End Card -->
     </div>
-    <!-- End Grid -->
   </div>
-  <!-- End Pricing -->
 </template>
