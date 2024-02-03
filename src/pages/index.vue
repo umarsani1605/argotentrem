@@ -9,6 +9,8 @@ import CTABannerSectionVue from './sections/CTABannerSection.vue';
 import FooterVue from '@/components/Footer.vue';
 import FirstSection from './sections/FirstSection.vue';
 import PricingSection from '@/pages/sections/PricingSection.vue';
+import QNASection from './sections/QNASection.vue';
+
 </script>
 
 <template>
@@ -19,6 +21,7 @@ import PricingSection from '@/pages/sections/PricingSection.vue';
     <GallerySection />
     <LocationSectionsVue />
     <PricingSection />
+    <QNASection />
     <ReviewSectionVue />
     <CTABannerSectionVue />
     <FooterVue />
