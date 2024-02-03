@@ -6,13 +6,13 @@ import BookButton from '@/components/BookButton.vue';
 
 <template>
   <div id="home" class="h-screen ">
-    <div class="mx-auto flex h-full max-w-[21rem] sm:max-w-[44rem] lg:max-w-[72rem] flex-col justify-end pb-12">
+    <div class="mx-auto flex h-full max-w-[21rem] md:max-w-[44rem] lg:max-w-[72rem] flex-col justify-end pb-12">
       <div class="md:w-3/4 lg:w-3/4">
         <div
           class="flex w-48 lg:w-52 items-center pb-3 font-serif text-lg lg:text-xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-accent">
           Argotentrem
         </div>
-        <h1 class="font-serif text-3xl font-medium text-brand-50 sm:text-5xl md:text-5xl lg:text-7xl lg:leading-snug">
+        <h1 class="font-serif text-3xl font-medium text-brand-50 md:text-5xl lg:text-7xl lg:leading-snug">
           Mudah Dijangkau, <br />
           Sulit Dilupakan.
         </h1>

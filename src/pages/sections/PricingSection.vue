@@ -58,12 +58,13 @@ const pricing = [
         Harga Paket
       </div>
     </div>
-    <div class="mt-6 lg:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center">
-      <div class="flex flex-col gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-8"
+    <div class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center">
+      <div
+        class="flex flex-col gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-8 md:gap-2 md:px-5"
         v-for="item in pricing" :key="item.id">
         <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">{{ item.name }}</h4>
-        <div class="mt-2 font-bold text-5xl text-gray-800 dark:text-gray-200">
-          <span class="font-medium text-4xl -me-2">Rp</span>
+        <div class="mt-2 font-bold text-5xl md:mt-0 md:text-4xl text-gray-800 dark:text-gray-200">
+          <span class="font-medium text-4xl md:text-3xl -me-2">Rp</span>
           {{ item.price }}
         </div>
         <p class="text-sm ">{{ item.description }}</p>
