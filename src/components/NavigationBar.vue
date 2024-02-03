@@ -59,6 +59,9 @@
             class="text-sm leading-6 text-gray-700 hover:text-white hover:transition-all focus:text-brand-800 focus:outline-none dark:text-white dark:hover:text-brand-500 dark:focus:text-brand-500">Galeri</a>
           <a href="#location"
             class="text-sm leading-6 text-gray-700 hover:text-white hover:transition-all focus:text-brand-800 focus:outline-none dark:text-white dark:hover:text-brand-500 dark:focus:text-brand-500">Lokasi</a>
+          <a href="#pricing"
+            class="text-sm leading-6 text-gray-700 hover:text-white hover:transition-all focus:text-brand-800 focus:outline-none dark:text-white dark:hover:text-brand-500 dark:focus:text-brand-500">Harga
+            Paket</a>
           <a href="#review"
             class="text-sm leading-6 text-gray-700 hover:text-white hover:transition-all focus:text-brand-800 focus:outline-none dark:text-white dark:hover:text-brand-500 dark:focus:text-brand-500">Review</a>
         </div>

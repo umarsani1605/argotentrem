@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
   <div id="sections" class="py-10">
-    <div
-      class="mx-auto -mb-48 flex max-w-[21rem] flex-col-reverse gap-10 sm:max-w-[44rem] md:-mb-48 md:mt-24 md:flex-row-reverse lg:-mb-10 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
+    <div data-aos="fade-up"
+      class="mx-auto -mb-48 flex max-w-[21rem] flex-col-reverse gap-10 sm:max-w-[44rem] md:-mb-48 md:mt-24 md:flex-row-reverse lg:-mb-32 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
       <div class="space-y-8 md:basis-4/5 md:mt-16 lg:mt-20 lg:basis-4/5 lg:pl-20">
         <h2 class="block font-serif text-3xl font-medium text-brand-50 sm:text-5xl md:text-6xl lg:text-6xl">
           Camping
@@ -22,8 +22,8 @@
         <img class="aspect-square" src="@/assets/images/hero/1.png" alt="" />
       </div>
     </div>
-    <div
-      class="mx-auto -mb-48 flex max-w-[21rem] flex-col gap-10 sm:max-w-[44rem] md:-mb-48 md:mt-24 md:flex-row-reverse lg:-mb-10 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
+    <div data-aos="fade-up"
+      class="mx-auto -mb-48 flex max-w-[21rem] flex-col gap-10 sm:max-w-[44rem] md:-mb-48 md:mt-24 md:flex-row-reverse lg:-mb-32 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
       <div class="content-center">
         <img class="aspect-square lg:aspect-square" src="@/assets/images/hero/2.png" alt="" />
       </div>
@@ -43,8 +43,8 @@
         </div>
       </div>
     </div>
-    <div
-      class="mx-auto -mb-48 flex max-w-[21rem] flex-col-reverse gap-10 sm:max-w-[44rem] md:-mb-32 md:mt-24 md:flex-row-reverse lg:-mb-10 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
+    <div data-aos="fade-up"
+      class="mx-auto -mb-72 flex max-w-[21rem] flex-col-reverse gap-10 sm:max-w-[44rem] md:-mb-52 md:mt-24 md:flex-row-reverse lg:-mb-32 lg:mt-24 lg:max-w-[72rem] lg:flex-row lg:gap-32">
       <div class="space-y-8 md:basis-4/5 md:mt-16 lg:mt-20 lg:basis-4/5 lg:pl-20">
         <h2 class="block font-serif text-3xl font-medium text-brand-50 sm:text-5xl md:text-6xl lg:text-6xl">
           Meeting

@@ -51,14 +51,15 @@ const pricing = [
 ]
 </script>
 <template>
-  <div id="pricing" class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem] py-10">
-    <div class="mb-5 flex justify-center">
+  <div id="pricing" class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem] pt-20">
+    <div class="mb-5 flex justify-center" data-aos="fade-up">
       <div
         class="flex w-96 items-center py-3 font-serif text-4xl text-brand-50 before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
         Harga Paket
       </div>
     </div>
-    <div class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center">
+    <div class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center"
+      data-aos="fade-up">
       <div
         class="flex flex-col gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-8 md:gap-2 md:px-5"
         v-for="item in pricing" :key="item.id">

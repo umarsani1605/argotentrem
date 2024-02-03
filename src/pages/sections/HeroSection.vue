@@ -6,13 +6,14 @@ import BookButton from '@/components/BookButton.vue';
 
 <template>
   <div id="home" class="h-screen ">
-    <div class="mx-auto flex h-full max-w-[21rem] md:max-w-[44rem] lg:max-w-[72rem] flex-col justify-end pb-12">
+    <div
+      class="mx-auto flex h-full pb-8 max-w-[21rem] md:max-w-[44rem] lg:max-w-[72rem] lg:pb-4 flex-col justify-end 2xl:pb-12">
       <div class="md:w-3/4 lg:w-3/4">
         <div
           class="flex w-48 lg:w-52 items-center pb-3 font-serif text-lg lg:text-xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-accent">
           Argotentrem
         </div>
-        <h1 class="font-serif text-3xl font-medium text-brand-50 md:text-5xl lg:text-7xl lg:leading-snug">
+        <h1 class="font-serif text-3xl font-medium text-brand-50 md:text-5xl lg:text-6xl 2xl:text-7xl lg:leading-snug">
           Mudah Dijangkau, <br />
           Sulit Dilupakan.
         </h1>
@@ -23,7 +24,7 @@ import BookButton from '@/components/BookButton.vue';
         </p>
         <BookButton />
       </div>
-      <div class="md:mt-16 lg:mt-24 h-20 hidden md:block lg:block">
+      <div class="md:mt-16 lg:mt-12 2xl:mt-24 h-20 hidden md:block lg:block">
         <Vue3Lottie :animationData="ScrollAnimation" :height="50" :width="100" />
       </div>
     </div>

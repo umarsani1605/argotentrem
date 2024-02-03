@@ -1,5 +1,6 @@
 <template>
-  <a class="inline-flex rounded-full bg-accent px-4 py-2 lg:px-5 lg:py-3 text-sm font-bold text-brand-950" href="#">
+  <a class="inline-flex rounded-xl bg-accent hover:bg-[#ffb300] transition-all px-4 py-2 lg:px-5 lg:py-3 text-sm font-bold text-brand-950"
+    href="#">
     Booking Sekarang
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="ml-2 w-5">
