@@ -4,7 +4,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,vue,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,vue,jsx,tsx,mdx,svg}",
     "./node_modules/preline/preline.js",
   ],
   plugins: [
@@ -39,9 +39,10 @@ export default {
           '700': '#597d0d',
           '800': '#4a6411',
           '900': '#3e5313',
-          '950': '#101702',
+          '950': '#0b1702',
         },
-        'accent': '#FFC234'
+        'accent': '#FFC234',
+        'test': '#17230f'
       },
     },
   },

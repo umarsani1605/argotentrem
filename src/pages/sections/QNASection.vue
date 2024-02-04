@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 </script>
 <template>
   <div id="location" class="md:mt-10">
@@ -107,4 +107,4 @@
       </div>
     </div>
   </div>
-</template>
+</template> -->

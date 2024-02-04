@@ -15,15 +15,16 @@ const images = [
 ]
 </script>
 <template>
-  <div id="gallery" class="pt-20">
+  <div id="gallery" class="pb-32 bg-[#1b2911]">
     <div class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
-      <div class="mb-5 flex justify-center" data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" class="mb-5 flex justify-center">
         <div
-          class="flex w-96 items-center py-3 font-serif text-4xl text-brand-50 before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
+          class="flex w-96 items-center py-3 font-serif text-4xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
           Galeri
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-3" data-aos="fade-up">
+      <div data-aos="fade-up" data-aos-duration="600" data-aos-offset="300"
+        class="grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-3">
         <div v-for="image in images" :key="image">
           <img class="w-full h-40 object-cover" :src="image" alt="">
         </div>

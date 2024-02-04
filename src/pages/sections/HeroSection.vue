@@ -5,7 +5,7 @@ import BookButton from '@/components/BookButton.vue';
 </script>
 
 <template>
-  <div id="home" class="h-screen ">
+  <div id="home" class="h-dvh md:h-screen ">
     <div
       class="mx-auto flex h-full pb-8 max-w-[21rem] md:max-w-[44rem] lg:max-w-[72rem] lg:pb-4 flex-col justify-end 2xl:pb-12">
       <div class="md:w-3/4 lg:w-3/4">
@@ -34,3 +34,4 @@ import BookButton from '@/components/BookButton.vue';
     </div>
   </div>
 </template>
+<style></style>
