@@ -111,7 +111,7 @@ onMounted(() => {
               class="glide__arrow glide__arrow--right md:absolute md:top-[50%] md:z-10 md:opacity-100 -translate-y-[100%] md:right-4"
               data-glide-dir=">">
               <div
-                class="h-9 w-9 bg-brand-900 border-brand-800 border-2 rounded-full flex justify-center items-center my-auto hover:bg-brand-900 duration-300 ease-in-out">
+                class="h-9 w-9 bg-brand-900/60 border-brand-800 border-2 rounded-full flex justify-center items-center my-auto hover:bg-brand-900 duration-300 ease-in-out">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                   <path fill-rule="evenodd"
                     d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"

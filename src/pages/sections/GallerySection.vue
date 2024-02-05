@@ -15,7 +15,7 @@ const images = [
 ]
 </script>
 <template>
-  <div id="gallery" class="pb-32 bg-[#1b2911]">
+  <div id="gallery" class="pb-32 bg-[#203014]">
     <div class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
       <div data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" class="mb-5 flex justify-center">
         <div
