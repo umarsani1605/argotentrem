@@ -3,87 +3,71 @@ import SelectButton from '@/components/SelectButton.vue';
 const pricing = [
   {
     id: 0,
-    name: 'Paket 1',
-    price: '35.000',
-    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    name: 'Paket Dasar',
+    price: '150.000',
+    description: 'Paket camping dasar, semua alat-alat bawa sendiri.',
     benefit: [
-      'Ut enim ',
-      'Ad minim',
-      'Quis nostrud',
-      'Ullamco',
-      'Laboris',
-      'Aliquip',
-      'Commodo',
-      'Consequat'
+      'Kavling 5x8 m²',
+      'Musholla',
+      'Listrik',
+      'Air bersih',
+      'Toilet',
+      'Compliment: Teh dan kopi tradisional',
     ]
   },
   {
     id: 1,
-    name: 'Paket 2',
-    price: '75.000',
-    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    name: 'Paket Lengkap',
+    price: '300.000',
+    description: 'Semua fasilitas Paket Dasar, dengan tambahan:',
     benefit: [
-      'Ut enim ',
-      'Ad minim',
-      'Quis nostrud',
-      'Ullamco',
-      'Laboris',
-      'Aliquip',
-      'Commodo',
-      'Consequat'
-    ]
-  },
-  {
-    id: 2,
-    name: 'Paket 3',
-    price: '150.000',
-    description: 'Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
-    benefit: [
-      'Ut enim ',
-      'Ad minim',
-      'Quis nostrud',
-      'Ullamco',
-      'Laboris',
-      'Aliquip',
-      'Commodo',
-      'Consequat'
+      'Tenda (Kapasitas 4-5 orang)',
+      'Alat makan dan minum',
+      'Alat tidur',
+      'Alat masak',
+      'Meja dan kursi portabel',
+      'Roll listrik',
+      'Lampu tenda',
+      'Porter'
     ]
   },
 ]
 </script>
 <template>
-  <div data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" id="pricing" class="pt-20 pb-32 bg-[#1b2911]">
-    <div class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
+  <div data-aos="fade-up" data-aos-duration="600" id="pricing" class="pt-10 md:pt-20 md:pb-16 bg-[#1b2911]">
+    <div class="mx-auto flex h-fit max-w-[20rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
       <div class="mb-5 flex justify-center" data-aos="fade-up">
         <div
           class="flex w-96 items-center py-3 font-serif text-4xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
           Harga Paket
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="300"
-        class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:grid-cols-3 gap-10 lg:gap-6 lg:items-center">
+      <div data-aos="fade-up" data-aos-duration="600"
+        class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:grid-cols-2 gap-10 lg:gap-10 lg:items-center">
         <div
-          class="relative transition ease-in-out duration-300 hover:scale-x-[1.03] hover:scale-y-[1.03] flex flex-col gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-8 md:gap-2 md:px-5"
+          class="h-fit md:h-[40rem] md:relative md:transition md:ease-in-out md:duration-300 md:hover:scale-x-[1.04] md:hover:scale-y-[1.04] flex flex-col justify-between gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-6 md:p-12"
           v-for="item in pricing" :key="item.id">
-          <h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">{{ item.name }}</h4>
-          <div class="mt-2 font-bold text-5xl md:mt-0 md:text-4xl text-gray-800 dark:text-gray-200">
-            <span class="font-medium text-4xl md:text-3xl -me-2">Rp</span>
-            {{ item.price }}
+          <div class="flex flex-col gap-3">
+            <h4 class="font-medium text-lg text-gray-200">{{ item.name }}</h4>
+            <div class="mt-2 font-bold text-4xl md:mt-0 md:text-4xl text-gray-200">
+              Rp
+              {{ item.price }}
+              <span class="font-medium text-xl md:text-xl -me-2">/malam</span>
+            </div>
+            <p class="text-sm md:text-lg">{{ item.description }}</p>
+            <ul class="mt-4 mb-8 ml-8 space-y-2.5 text-sm text-left md:text-lg">
+              <li class="flex space-x-2" v-for="benefit in item.benefit" :key="benefit">
+                <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span class="text-white">
+                  {{ benefit }}
+                </span>
+              </li>
+            </ul>
           </div>
-          <p class="text-sm ">{{ item.description }}</p>
-
-          <ul class="mt-4 mb-8 ml-4 space-y-2.5 text-sm">
-            <li class="flex space-x-2" v-for="benefit in item.benefit" :key="benefit">
-              <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              <span class="text-white">
-                {{ benefit }}
-              </span>
-            </li>
-          </ul>
           <SelectButton />
         </div>
       </div>

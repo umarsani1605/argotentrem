@@ -7,7 +7,7 @@ import BookButton from '@/components/BookButton.vue';
 <template>
   <div id="home" class="h-dvh md:h-screen ">
     <div
-      class="mx-auto flex h-full pb-8 max-w-[21rem] md:max-w-[44rem] lg:max-w-[72rem] lg:pb-4 flex-col justify-end 2xl:pb-12">
+      class="mx-auto flex h-full pb-8 max-w-[20rem] md:max-w-[44rem] lg:max-w-[72rem] lg:pb-4 flex-col justify-end 2xl:pb-12">
       <div class="md:w-3/4 lg:w-3/4">
         <div
           class="flex w-48 lg:w-52 items-center pb-3 font-serif text-lg lg:text-xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-accent">

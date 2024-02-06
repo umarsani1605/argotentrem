@@ -64,15 +64,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div id="review" class="md:top-10 bg-test">
-    <div class="mx-auto flex h-fit max-w-[21rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem] py-10">
-      <div data-aos="fade-up" data-aos-duration="600" data-aos-offset="300" class="mb-5 flex justify-center">
+  <div id="review" class="md:pt-10 bg-test">
+    <div class="mx-auto flex h-fit max-w-[20rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem] py-10">
+      <div data-aos="fade-up" data-aos-duration="600" class="mb-5 flex justify-center">
         <div
           class="flex w-96 items-center py-3 font-serif text-4xl text-accent before:me-4 before:flex-[1_1_0%] before:border-[1px] before:border-t before:border-gray-200 after:ms-4 after:flex-[1_1_0%] after:border-[1px] after:border-t after:border-gray-200">
           Review
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" class="flex h-60 lg:h-full md:h-80">
+      <div data-aos="fade-up" data-aos-duration="800" class="flex h-60 lg:h-full md:h-80">
         <div class="glide md:px-20 justify-center items-centers content-center">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
