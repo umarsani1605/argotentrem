@@ -1,10 +1,5 @@
 <script setup>
-const socialMedia = [
-  '../src/assets/images/social-media/facebook.png',
-  '../src/assets/images/social-media/instagram.png',
-  '../src/assets/images/social-media/twitter.png',
-  '../src/assets/images/social-media/whatsapp.png',
-]
+
 </script>
 
 <template>
@@ -14,9 +9,10 @@ const socialMedia = [
         Copyright © 2024 - ArgoTentrem
       </div>
       <div class="hidden md:flex md:flex-row">
-        <div class="flex justify-end w-10" v-for="item in socialMedia" :key="item">
-          <img class="h-5" :src="item" alt="item">
-        </div>
+        <img class="h-5 mr-3 cursor-pointer" src="@/assets/images/social-media/facebook.png" alt="item">
+        <img class="h-5 mr-3 cursor-pointer" src="@/assets/images/social-media/instagram.png" alt="item">
+        <img class="h-5 mr-3 cursor-pointer" src="@/assets/images/social-media/twitter.png" alt="item">
+        <img class="h-5 mr-3 cursor-pointer" src="@/assets/images/social-media/whatsapp.png" alt="item">
       </div>
     </div>
   </div>

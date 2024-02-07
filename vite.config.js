@@ -38,10 +38,12 @@ import path from 'path'
 // }
 
 export default defineConfig({
+  base: './',
   plugins: [
     vue(),
     // viteIgnoreStaticImport(["vue"]),
     svgLoader({
+      defaultImport: 'url',
       svgoConfig: {
         multipass: true
       }

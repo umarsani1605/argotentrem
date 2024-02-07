@@ -18,8 +18,8 @@ export default {
         // sans: ['"Inter"', ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
-        'hero': "url('src/assets/images/hero-bg.jpg')",
-        'cta': "url('src/assets/images/cta-bg.png')"
+        'hero': "url('@/assets/images/hero-bg.jpg')",
+        'cta': "url('@/assets/images/cta-bg.png')"
       },
       aspectRatio: {
         '2/3': '2 / 3',

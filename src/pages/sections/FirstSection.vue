@@ -71,7 +71,7 @@ import CampGrassSVG from '@/assets/camp-grass.svg?component'
       </div>
     </div>
     <div data-aos="fade-up" data-aos-duration="600"
-      class="hidden md:block -mt-56 bg-gradient-to-t from-brand-900/20 fill-[#0b1702] md:-mt-72 md:w-full">
+      class="hidden md:block -mt-56 bg-gradient-to-t from-brand-900/20 fill-[#203014] md:-mt-72 md:w-full">
       <CampSVG />
     </div>
     <div class="hidden md:block relative fill-[#1b2911] md:-mb-14 md:-mt-24">
