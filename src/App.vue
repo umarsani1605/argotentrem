@@ -2,7 +2,6 @@
 import NavigationBar from './components/NavigationBar.vue';
 import Home from './pages/index.vue';
 
-
 </script>
 
 <template>
