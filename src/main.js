@@ -4,7 +4,7 @@ import App from './App.vue'
 import { Vue3Lottie } from 'vue3-lottie'
 import "preline/preline";
 import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import 'aos/dist/aos.css'
 
 const app = createApp(App)
 
