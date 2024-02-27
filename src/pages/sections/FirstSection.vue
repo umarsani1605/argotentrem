@@ -12,10 +12,8 @@ import CampGrassSVG from '@/assets/camp-grass.svg?component'
           Camping
         </h2>
         <p class="text-brand-50 lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
+          Camping? Gass! Newbie atau master camping, semua bisa. Pilih tenda atau glamping, trus tinggal nikmatin aja.
+          Kami siap bantu buat yang bingung mulai dari mana.
         </p>
         <div
           class="relative -top-72 left-48 text-[9rem] font-bold text-white/10 md:-top-[23.25rem] md:left-44 lg:-left-20 lg:-top-96">
@@ -37,10 +35,9 @@ import CampGrassSVG from '@/assets/camp-grass.svg?component'
           Healing
         </h2>
         <p class="text-brand-50 lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
+          Di sini, healing bukan cuma aktivitas, tapi pengalaman. Dengan kedamaian alam sebagai guru, kita belajar melepas
+          penat dan menemukan ketenangan. Dengerin suara alam, rasakan angin sepoi, dan biarkan dirimu bersatu dengan
+          keindahan sekitar. Sempurna untuk siapa saja yang butuh jeda dan ingin recharge diri.
         </p>
         <div
           class="relative -top-72 left-48 text-[9rem] font-bold text-white/10 md:-top-[23.25rem] md:left-44 lg:-left-20 lg:-top-96">
@@ -56,10 +53,8 @@ import CampGrassSVG from '@/assets/camp-grass.svg?component'
           Meeting
         </h2>
         <p class="text-brand-50 lg:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
+          Lupakan meeting room! Di sini, kebersamaan itu tentang ketawa bareng di bawah langit luas, dikelilingi
+          pemandangan yang bikin hati senang. Cerita jadi lebih hidup, pertemanan makin erat.
         </p>
         <div
           class="relative -top-72 left-48 text-[9rem] font-bold text-white/10 md:-top-[23.25rem] md:left-44 lg:-left-20 lg:-top-96">
