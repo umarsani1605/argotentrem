@@ -3,16 +3,17 @@ import SelectButton from '@/components/SelectButton.vue';
 const pricing = [
   {
     id: 0,
-    name: 'Paket Dasar',
-    price: '150.000',
-    description: 'Paket camping dasar, semua alat-alat bawa sendiri.',
+    name: 'Paket Petualang',
+    // price: '150.000',
+    // description: 'Paket camping dasar, semua alat-alat bawa sendiri.',
     benefit: [
-      'Kavling 5x8 m²',
-      'Musholla',
-      'Listrik',
-      'Air bersih',
-      'Toilet',
-      'Compliment: Teh dan kopi tradisional',
+      'Tenda 4P',
+      '2 Sleeping Bag ',
+      '4 Kursi',
+      'Air Mineral',
+      'Makan & Minuman Instant',
+      'Snack',
+      'Alat Masak (Opsional)',
     ]
   },
   {
@@ -21,14 +22,15 @@ const pricing = [
     price: '300.000',
     description: 'Semua fasilitas Paket Dasar, dengan tambahan:',
     benefit: [
-      'Tenda (Kapasitas 4-5 orang)',
-      'Alat makan dan minum',
-      'Alat tidur',
-      'Alat masak',
-      'Meja dan kursi portabel',
-      'Roll listrik',
-      'Lampu tenda',
-      'Porter'
+      'Tenda Kualitas Premium',
+      'Kasur Latex',
+      'Bed Cover',
+      '2 Bantal',
+      '4 Kursi',
+      'Meja',
+      'Welcome Drink',
+      'Snack',
+      'Alat Masak'
     ]
   },
 ]
@@ -48,13 +50,7 @@ const pricing = [
           class="h-fit md:h-[40rem] md:relative md:transition md:ease-in-out md:duration-300 md:hover:scale-x-[1.04] md:hover:scale-y-[1.04] flex flex-col justify-between gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-6 md:p-12"
           v-for="item in pricing" :key="item.id">
           <div class="flex flex-col gap-3">
-            <h4 class="font-medium text-lg text-gray-200">{{ item.name }}</h4>
-            <div class="mt-2 font-bold text-4xl md:mt-0 md:text-4xl text-gray-200">
-              Rp
-              {{ item.price }}
-              <span class="font-medium text-xl md:text-xl -me-2">/malam</span>
-            </div>
-            <p class="text-sm md:text-lg">{{ item.description }}</p>
+            <h4 class="font-serif font-medium text-4xl text-accent">{{ item.name }}</h4>
             <ul class="mt-4 mb-8 ml-8 space-y-2.5 text-sm text-left md:text-lg">
               <li class="flex space-x-2" v-for="benefit in item.benefit" :key="benefit">
                 <svg class="flex-shrink-0 mt-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
