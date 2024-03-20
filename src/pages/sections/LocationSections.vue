@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-  <div id="location" class="pt-10 pb-12 md:pt-20 md:pb-32 bg-test">
+  <div id="location" class="pt-10 pb-12 md:pb-16 md:pt-20 bg-test">
     <div class="mx-auto flex h-fit max-w-[20rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
       <div data-aos="fade-up" data-aos-duration="600">
         <div class="mb-5 flex justify-center">

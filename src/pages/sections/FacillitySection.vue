@@ -44,7 +44,7 @@ const facilities = [
 </script>
 
 <template>
-  <div id="facility" class="bg-[#1b2911] pt-10 pb-12 md:pb-32 md:pt-20">
+  <div id="facility" class="bg-[#1b2911] pt-10 md:pt-20">
     <div class="mx-auto flex h-fit max-w-[20rem] flex-col sm:max-w-[44rem] lg:max-w-[72rem]">
       <div data-aos="fade-up" data-aos-duration="600" class="mb-8 flex justify-center">
         <div

@@ -47,7 +47,7 @@ const pricing = [
       <div data-aos="fade-up" data-aos-duration="600"
         class="mt-6 lg:mt-12 grid grid-cols-1 md:grid-cols-2 md:gap-3 lg:grid-cols-2 gap-10 lg:gap-10 lg:items-center">
         <div
-          class="h-fit md:h-[40rem] md:relative md:transition md:ease-in-out md:duration-300 md:hover:scale-x-[1.04] md:hover:scale-y-[1.04] flex flex-col justify-between gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-6 md:p-12"
+          class="h-fit md:h-[36rem] md:relative md:transition md:ease-in-out md:duration-300 md:hover:scale-x-[1.04] md:hover:scale-y-[1.04] flex flex-col justify-between gap-4 border-brand-800 border-2 bg-brand-900/40 text-center rounded-xl p-6 md:p-12"
           v-for="item in pricing" :key="item.id">
           <div class="flex flex-col gap-3">
             <h4 class="font-serif font-medium text-4xl text-accent">{{ item.name }}</h4>

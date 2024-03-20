@@ -11,7 +11,8 @@ import { onMounted } from 'vue'
 </script>
 <template>
   <header class="fixed z-20 w-full bg-brand-950 py-2 text-sm sm:flex-nowrap sm:justify-start md:py-3">
-    <nav class="mx-auto w-full max-w-[21rem] sm:flex sm:max-w-[44rem] sm:items-center sm:justify-between lg:max-w-[72rem]"
+    <nav
+      class="mx-auto w-full max-w-[21rem] sm:flex sm:max-w-[44rem] sm:items-center sm:justify-between lg:max-w-[72rem]"
       aria-label="Global">
       <div class="flex items-center justify-between">
         <a href="#" class="inline-flex items-center gap-x-2 font-serif text-lg font-semibold text-white">
@@ -30,9 +31,9 @@ import { onMounted } from 'vue'
               <line x1="3" x2="21" y1="12" y2="12" />
               <line x1="3" x2="21" y1="18" y2="18" />
             </svg>
-            <svg class="hidden h-5 w-5 flex-shrink-0 hs-collapse-open:block" xmlns="http://www.w3.org/2000/svg" width="32"
-              height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
+            <svg class="hidden h-5 w-5 flex-shrink-0 hs-collapse-open:block" xmlns="http://www.w3.org/2000/svg"
+              width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 6 6 18" />
               <path d="m6 6 12 12" />
             </svg>
